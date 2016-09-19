@@ -29,7 +29,7 @@ var HTMLskillsHeader = '<header><h2 id="skills-h3">Skills at a Glance</h2></head
 var HTMLskillsStart = '<ul id="skills" class="icons major style2"></ul>';
 var HTMLskills = '<li><span class="icon %icon%"><span class="label">%data%</span></span></li>';
 
-var HTMLworkHeader = '<header><h2>Resume</h2></header>';
+var HTMLworkHeader = '<header><h2>Work Experience</h2></header>';
 var HTMLworkStart = '<section class="work-container"></section>';
 var HTMLworkTitleAndEmployer = '<h3 class="resume-title">%title% - <span class="resume-employer">%employer%</span></h3>';
 var HTMLworkLocationAndDate = '<h4 class="resume-location">%location% | <span>%date%</span></h4>';
@@ -43,8 +43,10 @@ var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<span class="image"><img src="%data%" alt=""></span>';
 var HTMLprojectLink = '<footer><ul class="actions"><li><a href="%data%" class="button" target="_blanx">Details</a></li></ul></footer>';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
+var HTMLschoolHeader = '<header><h2>Education</h2></header>';
+var HTMLschoolStart = '<section class="school-container"></section>';
+var HTMLschoolName = '<h3 class="school-title"><a href="%link%" target="_blank">%data%</a></h3>';
+var HTMLschoolLocationAndDate = '<h4 class="school-location">%location% | <span>%date%</span></h4>';
 var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';

@@ -53,9 +53,9 @@ bio.display();
     "dates": "2015-2016",
     "url": "http://www.nju.edu.cn/english/"
   }, {
-    "name": "Tsinghua University (Inter-University Program for Chinese Language Studies, UC Berkeley)",
+    "name": "Tsinghua University",
     "location": "Beijing, China",
-    "degree": "N/A",
+    "degree": "(Inter-University Program for Chinese Language Studies, UC Berkeley)",
     "majors": "Chinese",
     "dates": "Fall 2015",
     "url": "http://ieas.berkeley.edu/iup/"
@@ -65,7 +65,7 @@ bio.display();
     "degree": "B.A.",
     "majors": "History",
     "dates": "2008-2014",
-    "url": "www.reed.edu"
+    "url": "http://www.reed.edu"
   }, {
     "name": "Yonsei University",
     "location": "Wonju, Korea",
@@ -74,16 +74,9 @@ bio.display();
     "dates": "Summer 2013",
     "url": "http://www.clscholarship.org/languages/korean"
   }, {
-    "name": "Reed College",
-    "location": "Portland, Oregon",
-    "degree": "B.A.",
-    "majors": "History",
-    "dates": "2008-2014",
-    "url": "www.reed.edu"
-  }, {
     "name": "National Taiwan University",
     "location": "Taipei, Taiwan",
-    "degree": "Advanced Chinese",
+    "degree": "Advanced",
     "majors": "Chinese",
     "dates": "2012-2013",
     "url": "http://iclp.ntu.edu.tw/"
@@ -97,25 +90,27 @@ bio.display();
 };
 // TODO: add display function
 
-// work.display = function() {
-  // var projectsArray = this.projects;
-  // work.schools.forEach(function(school) {
-    // var formattedTitle =
-    // var formattedDates = HTMLprojectDates.replace("%date%",proj.dates);
-    // var formattedDescription = HTMLprojectDescription.replace("%data%",proj.description);
-    // var formattedImage = HTMLprojectImage.replace("%data%", proj.images[0]);
-    // var formattedLink = HTMLprojectLink.replace("%data%", proj.link);
+education.display = function() {
+  $('#school-header').append(HTMLschoolHeader);
+  education.schools.forEach(function(school) {
+    var formattedName = HTMLschoolName.replace('%data%', school.name).replace('%link%', school.url);
+    var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%', school.dates).replace('%location%', school.location);
+    $('#school-header').append(HTMLschoolStart);
+    $('.school-container:last').append(formattedName);
+    $('.school-container:last').append(formattedDatesAndLocation);
+  });
+};
 
-    // $('#projects').append(HTMLprojectStart);
-    // $('.spotlight:last').append(formattedImage);
-    // $('.spotlight:last').append(HTMLprojectContent);
-    // $('.content:last').append(formattedTitle);
-    // $('.content:last').append(formattedDescription);
-    // $('.content:last').append(formattedDates);
-    // $('.content:last').append(formattedLink);
-  // });
+education.display();
+
+//     var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%', job.dates).replace('%location%', job.location);
+//     var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description);
+//     $('#resume-header').append(HTMLworkStart);
+//     $('.work-container:last').append(formattedWorkTitleAndEmployer);
+//     $('.work-container:last').append(formattedDatesAndLocation);
+//     $('.work-container:last').append(formattedWorkDescription);
+//   });
 // };
-
 
 /*
   Work Object
