@@ -88,7 +88,6 @@ bio.display();
     "url": "http://www.udacity.com/course/ud804"
   }]
 };
-// TODO: add display function
 
 education.display = function() {
   $('#school-header').append(HTMLschoolHeader);
@@ -104,15 +103,6 @@ education.display = function() {
 };
 
 education.display();
-
-//     var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%', job.dates).replace('%location%', job.location);
-//     var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description);
-//     $('#resume-header').append(HTMLworkStart);
-//     $('.work-container:last').append(formattedWorkTitleAndEmployer);
-//     $('.work-container:last').append(formattedDatesAndLocation);
-//     $('.work-container:last').append(formattedWorkDescription);
-//   });
-// };
 
 /*
   Work Object
@@ -157,6 +147,10 @@ work.display = function() {
 };
 
 work.display();
+
+/*
+  Project Object
+ */
 
 var project = {
   "projects": [
@@ -213,7 +207,6 @@ var project = {
 };
 
 project.display = function() {
-  // var projectsArray = this.projects;
   project.projects.forEach(function(proj) {
     var formattedTitle = HTMLprojectTitle.replace("%data%", proj.title);
     var formattedDates = HTMLprojectDates.replace("%date%",proj.dates);
