@@ -19,19 +19,19 @@ var bio = {
 };
 
 bio.display = function() {
-  $('#header-main').append(HTMLheaderName.replace("%data%", bio.name));
-  $('#header-main').append(HTMLheaderRole.replace("%data%", bio.role));
-  $('#footerContacts').append(HTMLgithub.replace("%data%", bio.contacts.github));
+  $('#header-main').append(HTMLheaderName.replace('%data%', bio.name));
+  $('#header-main').append(HTMLheaderRole.replace('%data%', bio.role));
+  $('#footerContacts').append(HTMLgithub.replace('%data%', bio.contacts.github));
   $('#bioPic').prepend(HTMLbioPic.replace('%data%', bio.biopic));
   $('#contact-list').after(HTMLcontactlist);
-  $('#contacts').append(HTMLmobile.replace("%data%", bio.contacts.mobile));
-  $('#contacts').append(HTMLemail.replace("%data%", bio.contacts.email));
-  $('#contacts').append(HTMLlocation.replace("%data%", bio.contacts.location));
+  $('#contacts').append(HTMLmobile.replace('%data%', bio.contacts.mobile));
+  $('#contacts').append(HTMLemail.replace('%data%', bio.contacts.email));
+  $('#contacts').append(HTMLlocation.replace('%data%', bio.contacts.location));
   if (bio.skills.length > 0) {
     $('#skills-header').append(HTMLskillsHeader);
-    $('#skills-header').after(HTMLskillsStart);
+    $('#skills-header').append(HTMLskillsStart);
     for (var i = 0; i < bio.skills.length; i++) {
-      var skillToAppend = HTMLskills.replace("%data%", bio.skills[i]);
+      var skillToAppend = HTMLskills.replace('%data%', bio.skills[i]);
       skillToAppend = skillToAppend.replace('%icon%', bio.fontAwesome[i]);
       $('#skills').append(skillToAppend);
     }
@@ -45,13 +45,13 @@ bio.display();
  */
 
  var education = {
-   "schools": [{
-     "name": "Nanjing University",
-     "location": "Nanjing, China",
-     "degree": "N/A",
-     "majors": "N/A",
-     "dates": "2015-2016",
-     "url": "http://www.nju.edu.cn/english/"
+  "schools": [{
+    "name": "Nanjing University",
+    "location": "Nanjing, China",
+    "degree": "N/A",
+    "majors": "N/A",
+    "dates": "2015-2016",
+    "url": "http://www.nju.edu.cn/english/"
   }, {
     "name": "Tsinghua University (Inter-University Program for Chinese Language Studies, UC Berkeley)",
     "location": "Beijing, China",
@@ -59,46 +59,63 @@ bio.display();
     "majors": "Chinese",
     "dates": "Fall 2015",
     "url": "http://ieas.berkeley.edu/iup/"
- }, {
-   "name": "Reed College",
-   "location": "Portland, Oregon",
-   "degree": "B.A.",
-   "majors": "History",
-   "dates": "2008-2014",
-   "url": "www.reed.edu"
-}, {
-  "name": "Yonsei University",
-  "location": "Wonju, Korea",
-  "degree": "Critical Language Scholarship (CLS)",
-  "majors": "Beginning Korean",
-  "dates": "Summer 2013",
-  "url": "http://www.clscholarship.org/languages/korean"
-}, {
-  "name": "Reed College",
-  "location": "Portland, Oregon",
-  "degree": "B.A.",
-  "majors": "History",
-  "dates": "2008-2014",
-  "url": "www.reed.edu"
-}, {
-  "name": "National Taiwan University",
-  "location": "Taipei, Taiwan",
-  "degree": "Advanced Chinese",
-  "majors": "Chinese",
-  "dates": "2012-2013",
-  "url": "http://iclp.ntu.edu.tw/"
-}],
-   "onlineCourses": [
-     {
-       "title": "JavaScript Syntax",
-       "school": "Udacity",
-       "dates": 2016,
-       "url": "http://www.udacity.com/course/ud804"
-     }
-   ]
- };
-
+  }, {
+    "name": "Reed College",
+    "location": "Portland, Oregon",
+    "degree": "B.A.",
+    "majors": "History",
+    "dates": "2008-2014",
+    "url": "www.reed.edu"
+  }, {
+    "name": "Yonsei University",
+    "location": "Wonju, Korea",
+    "degree": "Critical Language Scholarship (CLS)",
+    "majors": "Beginning Korean",
+    "dates": "Summer 2013",
+    "url": "http://www.clscholarship.org/languages/korean"
+  }, {
+    "name": "Reed College",
+    "location": "Portland, Oregon",
+    "degree": "B.A.",
+    "majors": "History",
+    "dates": "2008-2014",
+    "url": "www.reed.edu"
+  }, {
+    "name": "National Taiwan University",
+    "location": "Taipei, Taiwan",
+    "degree": "Advanced Chinese",
+    "majors": "Chinese",
+    "dates": "2012-2013",
+    "url": "http://iclp.ntu.edu.tw/"
+  }],
+  "onlineCourses": [{
+    "title": "JavaScript Syntax",
+    "school": "Udacity",
+    "dates": 2016,
+    "url": "http://www.udacity.com/course/ud804"
+  }]
+};
 // TODO: add display function
+
+// work.display = function() {
+  // var projectsArray = this.projects;
+  // work.schools.forEach(function(school) {
+    // var formattedTitle =
+    // var formattedDates = HTMLprojectDates.replace("%date%",proj.dates);
+    // var formattedDescription = HTMLprojectDescription.replace("%data%",proj.description);
+    // var formattedImage = HTMLprojectImage.replace("%data%", proj.images[0]);
+    // var formattedLink = HTMLprojectLink.replace("%data%", proj.link);
+
+    // $('#projects').append(HTMLprojectStart);
+    // $('.spotlight:last').append(formattedImage);
+    // $('.spotlight:last').append(HTMLprojectContent);
+    // $('.content:last').append(formattedTitle);
+    // $('.content:last').append(formattedDescription);
+    // $('.content:last').append(formattedDates);
+    // $('.content:last').append(formattedLink);
+  // });
+// };
+
 
 /*
   Work Object
@@ -135,7 +152,7 @@ work.display = function() {
     var formattedWorkTitleAndEmployer = HTMLworkTitleAndEmployer.replace('%title%', job.title).replace('%employer%', job.employer);
     var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%', job.dates).replace('%location%', job.location);
     var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description);
-    $('#resume-header').after(HTMLworkStart);
+    $('#resume-header').append(HTMLworkStart);
     $('.work-container:last').append(formattedWorkTitleAndEmployer);
     $('.work-container:last').append(formattedDatesAndLocation);
     $('.work-container:last').append(formattedWorkDescription);
@@ -199,41 +216,38 @@ var project = {
 };
 
 project.display = function() {
-  var projectsArray = this.projects;
-  for (var project in projectsArray) {
-    if (projectsArray.hasOwnProperty(project)) {
-      var formattedTitle = HTMLprojectTitle.replace("%data%", projectsArray[project].title);
-      // var formattedDates = HTMLprojectDates.replace("%data%",projectsArray[project].dates);
-      var formattedDescription = HTMLprojectDescription.replace("%data%",projectsArray[project].description);
-      var formattedImage = HTMLprojectImage.replace("%data%", projectsArray[project].images[0]);
-      var formattedLink = HTMLprojectLink.replace("%data%", projectsArray[project].link);
-      $('#projects').append(HTMLprojectStart);
-      $('.spotlight:last').append(formattedImage);
-      $('.spotlight:last').append(HTMLprojectContent);
-      $('.content:last').append(formattedTitle);
-      // $('.project-entry:last').append(formattedDates);
-      $('.content:last').append(formattedDescription);
-      $('.content:last').append(formattedLink);
-    }
-  }
+  // var projectsArray = this.projects;
+  project.projects.forEach(function(proj) {
+    var formattedTitle = HTMLprojectTitle.replace("%data%", proj.title);
+    var formattedDates = HTMLprojectDates.replace("%date%",proj.dates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%",proj.description);
+    var formattedImage = HTMLprojectImage.replace("%data%", proj.images[0]);
+    var formattedLink = HTMLprojectLink.replace("%data%", proj.link);
+
+    $('#projects').append(HTMLprojectStart);
+    $('.spotlight:last').append(formattedImage);
+    $('.spotlight:last').append(HTMLprojectContent);
+    $('.content:last').append(formattedTitle);
+    $('.content:last').append(formattedDescription);
+    $('.content:last').append(formattedDates);
+    $('.content:last').append(formattedLink);
+  });
 };
 
 project.display();
 
-var inName = function(name) {
-  name = name.trim().split(' ');
-  name[1] = name[1].toUpperCase();
-  name[0] = name[0][0] + name[0].slice(1).toLowerCase();
-  return name[0] + " " + name[1];
-};
+// var inName = function(name) {
+//   name = name.trim().split(' ');
+//   name[1] = name[1].toUpperCase();
+//   name[0] = name[0][0] + name[0].slice(1).toLowerCase();
+//   return name[0] + " " + name[1];
+// };
 
 // $('#main').append(internationalizeButton);
 
-
-
-$(document).click(function(loc) {
-  /* Act on the event */
-  logClicks(loc.pageX, loc.pageY);
-});
+// $(document).click(function(loc) {
+//   /* Act on the event */
+//   logClicks(loc.pageX, loc.pageY);
+// });
 
 $('#mapDiv').append(googleMap);

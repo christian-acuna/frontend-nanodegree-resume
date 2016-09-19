@@ -25,12 +25,12 @@ var HTMLlocation = '<li><span class="icon fa-map-marker"></span> %data%</li>';
 var HTMLbioPic = '<span class="image"><img src="%data%" alt="" /></span>';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsHeader = '<h2 id="skills-h3">Skills at a Glance</h2>';
+var HTMLskillsHeader = '<header><h2 id="skills-h3">Skills at a Glance</h2></header>';
 var HTMLskillsStart = '<ul id="skills" class="icons major style2"></ul>';
 var HTMLskills = '<li><span class="icon %icon%"><span class="label">%data%</span></span></li>';
 
-var HTMLworkHeader = '<h2>Resume</h2>';
-var HTMLworkStart = '<div class="work-container"></div>';
+var HTMLworkHeader = '<header><h2>Resume</h2></header>';
+var HTMLworkStart = '<section class="work-container"></section>';
 var HTMLworkTitleAndEmployer = '<h3 class="resume-title">%title% - <span class="resume-employer">%employer%</span></h3>';
 var HTMLworkLocationAndDate = '<h4 class="resume-location">%location% | <span>%date%</span></h4>';
 var HTMLworkDescription = '<p><br>%data%</p>';
@@ -38,7 +38,7 @@ var HTMLworkDescription = '<p><br>%data%</p>';
 var HTMLprojectStart = '<section class="spotlight"></section>';
 var HTMLprojectTitle = '<header><h3>%data%</h3></header>';
 var HTMLprojectContent = '<div class="content"></div>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectDates = '<h5>%date%</h5>';
 var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<span class="image"><img src="%data%" alt=""></span>';
 var HTMLprojectLink = '<footer><ul class="actions"><li><a href="%data%" class="button" target="_blanx">Details</a></li></ul></footer>';
