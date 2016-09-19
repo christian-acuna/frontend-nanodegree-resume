@@ -49,14 +49,14 @@ bio.display();
     "name": "Nanjing University",
     "location": "Nanjing, China",
     "degree": "N/A",
-    "majors": "N/A",
+    "majors": "",
     "dates": "2015-2016",
     "url": "http://www.nju.edu.cn/english/"
   }, {
     "name": "Tsinghua University",
     "location": "Beijing, China",
-    "degree": "(Inter-University Program for Chinese Language Studies, UC Berkeley)",
-    "majors": "Chinese",
+    "degree": "(Inter-University Program for Chinese Language Studies, UC Berkeley) -",
+    "majors": "Advanced Chinese",
     "dates": "Fall 2015",
     "url": "http://ieas.berkeley.edu/iup/"
   }, {
@@ -69,7 +69,7 @@ bio.display();
   }, {
     "name": "Yonsei University",
     "location": "Wonju, Korea",
-    "degree": "Critical Language Scholarship (CLS)",
+    "degree": "Critical Language Scholarship (CLS) -",
     "majors": "Beginning Korean",
     "dates": "Summer 2013",
     "url": "http://www.clscholarship.org/languages/korean"
@@ -95,9 +95,11 @@ education.display = function() {
   education.schools.forEach(function(school) {
     var formattedName = HTMLschoolName.replace('%data%', school.name).replace('%link%', school.url);
     var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%', school.dates).replace('%location%', school.location);
+    var formattedDegreeAndMajor = HTMLschoolDegreeAndMajor.replace('%degree%', school.degree).replace('%major%', school.majors);
     $('#school-header').append(HTMLschoolStart);
     $('.school-container:last').append(formattedName);
     $('.school-container:last').append(formattedDatesAndLocation);
+    $('.school-container:last').append(formattedDegreeAndMajor);
   });
 };
 

@@ -19,9 +19,7 @@ var HTMLcontactlist = '<ul id="contacts" class="alt"></ul>';
 var HTMLmobile = '<li><span class="icon fa-phone"></span> %data%</li>';
 var HTMLemail = '<li><a href="mailto:%data%"><span class="icon fa-envelope"></span> %data%</a></li>';
 var HTMLgithub = '<li><a href="%data%" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>';
-var HTMLblog = '<li>%data%</li>';
 var HTMLlocation = '<li><span class="icon fa-map-marker"></span> %data%</li>';
-
 var HTMLbioPic = '<span class="image"><img src="%data%" alt="" /></span>';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
@@ -47,10 +45,7 @@ var HTMLschoolHeader = '<header><h2>Education</h2></header>';
 var HTMLschoolStart = '<section class="school-container"></section>';
 var HTMLschoolName = '<h3 class="school-title"><a href="%link%" target="_blank">%data%</a></h3>';
 var HTMLschoolLocationAndDate = '<h4 class="school-location">%location% | <span>%date%</span></h4>';
-var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolDegreeAndMajor = '<h5>%degree% %major%</h5>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
