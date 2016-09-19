@@ -25,7 +25,7 @@ bio.display = function() {
   $('#bioPic').prepend(HTMLbioPic.replace('%data%', bio.biopic));
   $('#contact-list').after(HTMLcontactlist);
   $('#contacts').append(HTMLmobile.replace('%data%', bio.contacts.mobile));
-  $('#contacts').append(HTMLemail.replace('%data%', bio.contacts.email));
+  $('#contacts').append(HTMLemail.replace(/%data%/g, bio.contacts.email));
   $('#contacts').append(HTMLlocation.replace('%data%', bio.contacts.location));
   if (bio.skills.length > 0) {
     $('#skills-header').append(HTMLskillsHeader);

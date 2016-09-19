@@ -17,7 +17,7 @@ var HTMLheaderRole = '<h3>%data%</h3>';
 
 var HTMLcontactlist = '<ul id="contacts" class="alt"></ul>';
 var HTMLmobile = '<li><span class="icon fa-phone"></span> %data%</li>';
-var HTMLemail = '<li><span class="icon fa-envelope"></span> %data%</li>';
+var HTMLemail = '<li><a href="mailto:%data%"><span class="icon fa-envelope"></span> %data%</a></li>';
 var HTMLgithub = '<li><a href="%data%" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>';
 var HTMLblog = '<li>%data%</li>';
 var HTMLlocation = '<li><span class="icon fa-map-marker"></span> %data%</li>';
