@@ -31,7 +31,7 @@ var HTMLskills = '<li><span class="icon %icon%"><span class="label">%data%</span
 
 var HTMLworkHeader = '<h2>Resume</h2>';
 var HTMLworkStart = '<div class="work-container"></div>';
-var HTMLworkTitleAndEmployer = '<h3 class="resume-title">%title% - <span class="resume-employer">Fulbright China</span></h3>';
+var HTMLworkTitleAndEmployer = '<h3 class="resume-title">%title% - <span class="resume-employer">%employer%</span></h3>';
 var HTMLworkLocationAndDate = '<h4 class="resume-location">%location% | <span>%date%</span></h4>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
