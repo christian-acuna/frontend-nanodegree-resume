@@ -124,7 +124,7 @@ gulp.task('serve', ['minify-css'], function() {
     }
   });
 
-  gulp.watch('src/js/*.js', ['scripts']).on('change', bs.reload);
+  gulp.watch('src/js/*.js').on('change', bs.reload);
   gulp.watch('src/css/*.css', ['minify-css']);
   gulp.watch('./*.html').on('change', bs.reload);
 });

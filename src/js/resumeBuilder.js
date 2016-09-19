@@ -100,6 +100,14 @@ education.display = function() {
     $('.school-container:last').append(formattedDatesAndLocation);
     $('.school-container:last').append(formattedDegreeAndMajor);
   });
+  $('#school-header').append(HTMLonlineClasses);
+  education.onlineCourses.forEach(function(online) {
+    $('#school-header').append(HTMLschoolStart);
+    var formattedName = HTMLonlineTitle.replace('%data%', online.title).replace('%link%', online.url);
+    var formattedSchoolAndDate = HTMLonlineSchoolAndDate.replace('%data%', online.school).replace('%date%', online.dates);
+    $('.school-container:last').append(formattedName);
+    $('.school-container:last').append(formattedSchoolAndDate);
+  });
 };
 
 education.display();

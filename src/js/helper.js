@@ -45,11 +45,9 @@ var HTMLschoolName = '<h3 class="school-title"><a href="%link%" target="_blank">
 var HTMLschoolLocationAndDate = '<h4 class="school-location">%location% | <span>%date%</span></h4>';
 var HTMLschoolDegreeAndMajor = '<h5>%degree% %major%</h5>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineClasses = '<header><h2>Online Classes</h2></header>';
+var HTMLonlineTitle = '<h3 class="school-title"><a href="%link%" target="_blank">%data%</a></h3>';
+var HTMLonlineSchoolAndDate = '<h4 class="school-location">%data% | %date%</h4>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
