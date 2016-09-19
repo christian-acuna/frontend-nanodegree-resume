@@ -132,10 +132,8 @@ var work = {
 work.display = function() {
   $('#resume-header').append(HTMLworkHeader);
   work.jobs.forEach(function(job) {
-    var formattedWorkTitleAndEmployer = HTMLworkTitleAndEmployer.replace('%title%', job.title);
-    formattedWorkTitleAndEmployer = formattedWorkTitleAndEmployer.replace('%employer%', job.employer);
-    var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%',job.dates);
-    formattedDatesAndLocation = formattedDatesAndLocation.replace('%location%', job.location);
+    var formattedWorkTitleAndEmployer = HTMLworkTitleAndEmployer.replace('%title%', job.title).replace('%employer%', job.employer);
+    var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%', job.dates).replace('%location%', job.location);
     var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description);
     $('#resume-header').after(HTMLworkStart);
     $('.work-container:last').append(formattedWorkTitleAndEmployer);
