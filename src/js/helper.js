@@ -20,7 +20,7 @@ var HTMLmobile = '<li><span class="icon fa-phone"></span> %data%</li>';
 var HTMLemail = '<li><a href="mailto:%data%"><span class="icon fa-envelope"></span> %data%</a></li>';
 var HTMLgithub = '<li><a href="%data%" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>';
 var HTMLlocation = '<li><span class="icon fa-map-marker"></span> %data%</li>';
-var HTMLbioPic = '<span class="image"><img src="%data%" alt="" /></span>';
+var HTMLbioPic = '<picture class="image"><source srcset="dist/images/%image%.webp 1x, dist/images/%image%@2x.webp 2x" type="image/webp"><img alt="Christian Acuna" src="dist/images/%image%.jpg.jpg" srcset="dist/images/%image%@2x.jpg 2x, dist/images/%image%.jpg.jpg"></picture>';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsHeader = '<header><h2 id="skills-h3">Skills at a Glance</h2></header>';
@@ -38,7 +38,7 @@ var HTMLprojectTitle = '<header><h3>%data%</h3></header>';
 var HTMLprojectContent = '<div class="content"></div>';
 var HTMLprojectDates = '<h5>%date%</h5>';
 var HTMLprojectDescription = '<p>%data%</p>';
-var HTMLprojectImage = '<span class="image"><img src="%data%" alt=""></span>';
+var HTMLprojectImage = '<picture class="image"><source srcset="dist/images/%image%.webp 1x, dist/images/%image%@2x.webp 2x, dist/images/%image%@3x.webp 3x" type="image/webp"><img alt="%image%" src="dist/images/%image%.jpg.jpg" srcset="dist/images/%image%@3x.jpg 3x, dist/images/%image%@2x.jpg 2x, dist/images/%image%.jpg.jpg"></picture>';
 var HTMLprojectLink = '<footer><ul class="actions"><li><a href="%data%" class="button" target="_blanx">Details</a></li></ul></footer>';
 
 var HTMLschoolHeader = '<header><h2>Education</h2></header>';
