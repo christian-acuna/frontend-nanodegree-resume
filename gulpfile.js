@@ -12,13 +12,91 @@ csslint.addFormatter('csslint-stylish');
 var bs = require('browser-sync').create();
 var $ = require('gulp-load-plugins')();
 
-gulp.task('scripts', function() {
-  gulp.src('src/js/*.js')
-    .pipe($.plumber())
-    .pipe($.uglify())
-    .pipe($.rename('app.min.js'))
-    .pipe(gulp.dest('dist/js'));
+gulp.task('images:main', function() {
+  return gulp.src('src/images/main/christian_acuna.jpg')
+    .pipe($.responsive({
+      // Convert all images to JPEG format
+      '*': [{
+        width: 350,
+        rename: {
+          extname: '.jpg',
+        },
+      }, {
+        width: 350 * 2,
+        rename: {
+          suffix: '@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 350,
+        rename: {
+          extname: '.webp'
+        },
+      }, {
+        width: 350 * 2,
+        rename: {
+          suffix: '@2x',
+          extname: '.webp',
+        },
+      }],
+    }))
+    .pipe(gulp.dest('dist/images'));
 });
+
+gulp.task('images:portfolio', function() {
+  return gulp.src('src/images/*.{jpg,png}')
+    .pipe($.responsive({
+      // Convert all images to JPEG format
+      '*': [{
+        width: 500,
+        rename: {
+          extname: '.jpg',
+        },
+      }, {
+        width: 500 * 2,
+        rename: {
+          suffix: '@2x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 500 * 3,
+        rename: {
+          suffix: '@3x',
+          extname: '.jpg',
+        },
+      }, {
+        width: 500,
+        rename: {
+          extname: '.webp'
+        },
+      }, {
+        width: 500 * 2,
+        rename: {
+          suffix: '@2x',
+          extname: '.webp',
+        },
+      }, {
+        width: 500 * 3,
+        rename: {
+          suffix: '@3x',
+          extname: '.webp',
+        },
+      }],
+    }))
+    .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('clean:images', function() {
+  return del(['dist/images/**']);
+});
+
+// gulp.task('scripts', function() {
+//   gulp.src('src/js/*.js')
+//     .pipe($.plumber())
+//     .pipe($.uglify())
+//     .pipe($.rename('app.min.js'))
+//     .pipe(gulp.dest('dist/js'));
+// });
 
 gulp.task('css', function() {
   gulp.src('src/css/style.css')
@@ -46,7 +124,7 @@ gulp.task('serve', ['minify-css'], function() {
     }
   });
 
-  gulp.watch('src/js/*.js', ['scripts']).on('change', bs.reload);
+  gulp.watch('src/js/*.js').on('change', bs.reload);
   gulp.watch('src/css/*.css', ['minify-css']);
   gulp.watch('./*.html').on('change', bs.reload);
 });
@@ -59,4 +137,4 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('default', ['scripts', 'css', 'minify-css', 'serve']);
+gulp.task('default', ['css', 'minify-css', 'serve']);
