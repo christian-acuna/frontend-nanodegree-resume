@@ -130,24 +130,21 @@ var work = {
 };
 
 work.display = function() {
-  var workArray = work.jobs;
-  for (var job in workArray) {
-    if (workArray.hasOwnProperty(job)) {
-      $('#workExperience').append(HTMLworkStart);
-      var formattedEmployer = HTMLworkEmployer.replace("%data%", workArray[job].employer);
-      var formattedTitle = HTMLworkTitle.replace("%data%", workArray[job].title);
-      var formattedDates = HTMLworkDates.replace("%data%", workArray[job].dates);
-      var formattedLocation = HTMLworkLocation.replace("%data%",workArray[job].location);
-      var formattedDescription = HTMLworkDescription.replace("%data%",workArray[job].description);
-      $('.work-entry:last').append(formattedEmployer + formattedTitle);
-      $('.work-entry:last').append(formattedLocation);
-      $('.work-entry:last').append(formattedDates);
-      $('.work-entry:last').append(formattedDescription);
-    }
-  }
+  $('#resume-header').append(HTMLworkHeader);
+  work.jobs.forEach(function(job) {
+    var formattedWorkTitleAndEmployer = HTMLworkTitleAndEmployer.replace('%title%', job.title);
+    formattedWorkTitleAndEmployer = formattedWorkTitleAndEmployer.replace('%employer%', job.employer);
+    var formattedDatesAndLocation = HTMLworkLocationAndDate.replace('%date%',job.dates);
+    formattedDatesAndLocation = formattedDatesAndLocation.replace('%location%', job.location);
+    var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description);
+    $('#resume-header').after(HTMLworkStart);
+    $('.work-container:last').append(formattedWorkTitleAndEmployer);
+    $('.work-container:last').append(formattedDatesAndLocation);
+    $('.work-container:last').append(formattedWorkDescription);
+  });
 };
 
-
+work.display();
 
 var project = {
   "projects": [
@@ -242,12 +239,3 @@ $(document).click(function(loc) {
 });
 
 $('#mapDiv').append(googleMap);
-
-
-// $('#main').append(bio.role);
-// $('#main').append(bio.contactInfo);
-// $('#main').append(bio.bioPic);
-// $('#main').append(bio['welcome-message']);
-// $('#main').append(bio.skills);
-// $('#main').append(work.position);
-// $('#main').append(education.city);
