@@ -29,11 +29,10 @@ var HTMLskillsHeader = '<h2 id="skills-h3">Skills at a Glance</h2>';
 var HTMLskillsStart = '<ul id="skills" class="icons major style2"></ul>';
 var HTMLskills = '<li><span class="icon %icon%"><span class="label">%data%</span></span></li>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkHeader = '<h2>Resume</h2>';
+var HTMLworkStart = '<div class="work-container"></div>';
+var HTMLworkTitleAndEmployer = '<h3 class="resume-title">%title% - <span class="resume-employer">Fulbright China</span></h3>';
+var HTMLworkLocationAndDate = '<h4 class="resume-location">%location% | <span>%date%</span></h4>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<section class="spotlight"></section>';
