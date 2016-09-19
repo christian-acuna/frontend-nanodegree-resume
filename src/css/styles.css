@@ -10,17 +10,20 @@
   margin: 0 5%;
 }
 
-.work-container {
+.work-container,
+.school-container {
   display: flex;
   flex-wrap: wrap;
 }
 
- .resume-title {
+ .resume-title,
+ .school-title {
   width: 75%;
   text-align: left;
  }
 
-.resume-location {
+.resume-location,
+.school-location {
   width: 25%;
   text-align: right;
   padding-top: 10px;
