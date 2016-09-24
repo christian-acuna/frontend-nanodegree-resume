@@ -33,6 +33,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2",
     "sharp": "^0.16.0"
   }
 }
