@@ -10,7 +10,6 @@ gulp.task('images:main', function() {
     .pipe(gulp.dest(config.imageFolder));
 });
 
-
 gulp.task('images:portfolio', function() {
   return gulp.src(config.portImages)
     .pipe($.responsive(config.portImagesConfig))

@@ -8,3 +8,7 @@ var config      = require('../../config').browsersync.development;
 gulp.task('browsersync', ['build'], function() {
   browsersync(config);
 });
+
+gulp.task('serve', function() {
+  browsersync(config);
+});

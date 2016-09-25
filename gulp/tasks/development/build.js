@@ -8,8 +8,9 @@ gulp.task('build', function(callback) {
   runSequence('delete',
   [
     'images:main',
-    'images:portfolio'
-    // 'minify-css'
+    'images:portfolio',
+    'lint',
+    'minify-css'
   ],
   callback);
 });

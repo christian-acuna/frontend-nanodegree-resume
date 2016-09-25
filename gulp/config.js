@@ -7,6 +7,8 @@ var developmentImages = 'dist/images';
 var developmentStyles = 'dist/styles';
 var mainPic = 'src/images/main/christian_acuna.jpg';
 var portfolioImages = 'src/images/*.{jpg,png}';
+var javascript = 'src/js/*.js';
+var css = 'src/css/*.css';
 // var productionAssets  = 'build/production/assets';
 
 module.exports = {
@@ -93,5 +95,12 @@ module.exports = {
         },
       }],
     },
+  },
+  javascript: {
+    js: javascript
+  },
+  styles: {
+    css: css,
+    
   }
 };
