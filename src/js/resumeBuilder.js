@@ -44,48 +44,48 @@ bio.display();
   Education Object
  */
 
- var education = {
-  "schools": [{
-    "name": "Nanjing University",
-    "location": "Nanjing, China",
-    "degree": "N/A",
-    "majors": "",
-    "dates": "2015-2016",
-    "url": "http://www.nju.edu.cn/english/"
+var education = {
+  'schools': [{
+    'name': 'Nanjing University',
+    'location': 'Nanjing, China',
+    'degree': 'N/A',
+    'majors': '',
+    'dates': '2015-2016',
+    'url': 'http://www.nju.edu.cn/english/'
   }, {
-    "name": "Tsinghua University",
-    "location": "Beijing, China",
-    "degree": "(Inter-University Program for Chinese Language Studies, UC Berkeley) -",
-    "majors": "Advanced Chinese",
-    "dates": "Fall 2015",
-    "url": "http://ieas.berkeley.edu/iup/"
+    'name': 'Tsinghua University',
+    'location': 'Beijing, China',
+    'degree': '(Inter-University Program for Chinese Language Studies, UC Berkeley) -',
+    'majors': 'Advanced Chinese',
+    'dates': 'Fall 2015',
+    'url': 'http://ieas.berkeley.edu/iup/'
   }, {
-    "name": "Reed College",
-    "location": "Portland, Oregon",
-    "degree": "B.A.",
-    "majors": "History",
-    "dates": "2008-2014",
-    "url": "http://www.reed.edu"
+    'name': 'Reed College',
+    'location': 'Portland, Oregon',
+    'degree': 'B.A.',
+    'majors': 'History',
+    'dates': '2008-2014',
+    'url': 'http://www.reed.edu'
   }, {
-    "name": "Yonsei University",
-    "location": "Wonju, Korea",
-    "degree": "Critical Language Scholarship (CLS) -",
-    "majors": "Beginning Korean",
-    "dates": "Summer 2013",
-    "url": "http://www.clscholarship.org/languages/korean"
+    'name': 'Yonsei University',
+    'location': 'Wonju, Korea',
+    'degree': 'Critical Language Scholarship (CLS) -',
+    'majors': 'Beginning Korean',
+    'dates': 'Summer 2013',
+    'url': 'http://www.clscholarship.org/languages/korean'
   }, {
-    "name": "National Taiwan University",
-    "location": "Taipei, Taiwan",
-    "degree": "Advanced",
-    "majors": "Chinese",
-    "dates": "2012-2013",
-    "url": "http://iclp.ntu.edu.tw/"
+    'name': 'National Taiwan University',
+    'location': 'Taipei, Taiwan',
+    'degree': 'Advanced',
+    'majors': 'Chinese',
+    'dates': '2012-2013',
+    'url': 'http://iclp.ntu.edu.tw/'
   }],
-  "onlineCourses": [{
-    "title": "JavaScript Syntax",
-    "school": "Udacity",
-    "dates": 2016,
-    "url": "http://www.udacity.com/course/ud804"
+  'onlineCourses': [{
+    'title': 'JavaScript Syntax',
+    'school': 'Udacity',
+    'dates': 2016,
+    'url': 'http://www.udacity.com/course/ud804'
   }]
 };
 
