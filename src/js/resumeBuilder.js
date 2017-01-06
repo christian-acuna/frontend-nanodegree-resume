@@ -4,7 +4,7 @@
 
 var bio = {
   'name': 'Christian Miguel Acuña',
-  'role': 'iOS and Front-end Web Developer',
+  'role': 'Front End Developer',
   'contacts': {
     'mobile': '(909) 529-1451',
     'email': 'cacuna0828@gmail.com',
@@ -110,7 +110,7 @@ education.display = function() {
   });
 };
 
-education.display();
+// education.display();
 
 /*
   Work Object
@@ -154,7 +154,7 @@ work.display = function() {
   });
 };
 
-work.display();
+// work.display();
 
 /*
   Project Object
