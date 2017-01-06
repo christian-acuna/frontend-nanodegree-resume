@@ -9,6 +9,7 @@ var bio = {
     'mobile': '(909) 529-1451',
     'email': 'cacuna0828@gmail.com',
     'github': 'https://github.com/christian-acuna/',
+    'linkedin': 'https://www.linkedin.com/in/christian-acuna',
     'location': 'Nanjing, China',
   },
   'welcomeMessage': 'Welcome to my site!',
