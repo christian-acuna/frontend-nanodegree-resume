@@ -4,7 +4,7 @@
 
 var bio = {
   'name': 'Christian Miguel Acuña',
-  'role': 'Front End Developer',
+  'role': 'Front-End Developer',
   'contacts': {
     'mobile': '(415) 966-5530',
     'email': 'christian.acuna@fulbrightmail.org',
