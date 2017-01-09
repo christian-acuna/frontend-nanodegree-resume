@@ -37,7 +37,7 @@ module.exports = {
           extname: '.jpg',
         },
       }, {
-        width: 350 * 2,
+        width: 300 * 2,
         rename: {
           suffix: '@2x',
           extname: '.jpg',
@@ -48,7 +48,7 @@ module.exports = {
           extname: '.webp'
         },
       }, {
-        width: 350 * 2,
+        width: 300 * 2,
         rename: {
           suffix: '@2x',
           extname: '.webp',
@@ -70,12 +70,12 @@ module.exports = {
           suffix: '@2x',
           extname: '.jpg',
         },
-      }, {
-        width: 500 * 3,
-        rename: {
-          suffix: '@3x',
-          extname: '.jpg',
-        },
+      // }, {
+      //   width: 500 * 3,
+      //   rename: {
+      //     suffix: '@3x',
+      //     extname: '.jpg',
+      //   },
       }, {
         width: 500,
         rename: {
@@ -87,12 +87,12 @@ module.exports = {
           suffix: '@2x',
           extname: '.webp',
         },
-      }, {
-        width: 500 * 3,
-        rename: {
-          suffix: '@3x',
-          extname: '.webp',
-        },
+      // }, {
+      //   width: 500 * 3,
+      //   rename: {
+      //     suffix: '@3x',
+      //     extname: '.webp',
+      //   },
       }],
     },
   },
@@ -101,6 +101,6 @@ module.exports = {
   },
   styles: {
     css: css,
-    
+
   }
 };
