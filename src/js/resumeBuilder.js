@@ -4,13 +4,13 @@
 
 var bio = {
   'name': 'Christian Miguel Acuña',
-  'role': 'Front End Developer',
+  'role': 'Front-End Developer',
   'contacts': {
-    'mobile': '(909) 529-1451',
-    'email': 'cacuna0828@gmail.com',
+    'mobile': '(415) 966-5530',
+    'email': 'christian.acuna@fulbrightmail.org',
     'github': 'https://github.com/christian-acuna/',
     'linkedin': 'https://www.linkedin.com/in/christian-acuna',
-    'location': 'Nanjing, China',
+    'location': 'San Francisco, CA',
   },
   'welcomeMessage': 'Welcome to my site!',
   'biopic': 'christian_acuna',
@@ -170,17 +170,23 @@ var project = {
       images: ['lensOfChina'],
       link: 'https://christian-acuna.github.io/fend-design-mockup-portfolio/'
     }, {
+      "title": "Neighborhood Map",
+      "dates": "September 2016",
+      "description": "Develop a single-page application featuring a map of a neighborhood you would like to visit. Add additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. Research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).",
+      images: ['pic05'],
+      link: '#'
+    }, {
+      "title": "Feed Reader Testing",
+      "dates": "September 2016",
+      "description": "In this project, you will be learning about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as 'test-driven development' or TDD. This is when developers write tests first, before they ever start developing their application.",
+      images: ['pic05'],
+      link: '#'
+    }, {
       "title": "Portfolio Site",
       "dates": "September 2016",
       "description": "Replicate website from PDF design mockup in HTML and CSS. Develop a responsive website that displays optimived images, descriptions and links to portfolio projects.",
       images: ['pic05'],
       link: 'https://christian-acuna.github.io/fend-design-mockup-portfolio/'
-    }, {
-      "title": "Animal Trading Card",
-      "dates": "September 2016",
-      "description": "Re-create a webpage from a design prototype.",
-      images: ['AnimalTradingCards'],
-      link: 'https://github.com/christian-acuna/fend-animal-trading-cards'
     }, {
       "title": "Mockup to Article",
       "dates": "September 2016",
@@ -199,19 +205,7 @@ var project = {
       "description": "Optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.",
       images: ['pic05'],
       link: '#'
-    }, {
-      "title": "Neighborhood Map",
-      "dates": "September 2016",
-      "description": "Develop a single-page application featuring a map of a neighborhood you would like to visit. Add additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. Research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).",
-      images: ['pic05'],
-      link: '#'
-    }, {
-      "title": "Feed Reader Testing",
-      "dates": "September 2016",
-      "description": "In this project, you will be learning about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as 'test-driven development' or TDD. This is when developers write tests first, before they ever start developing their application.",
-      images: ['pic05'],
-      link: '#'
-    }
+    },
   ]
 };
 
