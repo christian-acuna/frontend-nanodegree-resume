@@ -113,7 +113,7 @@ var project = {
       "title": "Classic Arcade Game Clone",
       "dates": "September 2016",
       "description": "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.",
-      images: ['frogger-html5'],
+      images: ['frogger-html'],
       link: 'http://christian-acuna.me/frontend-nanodegree-arcade-game/'
     }
   ]
