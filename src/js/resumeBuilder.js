@@ -88,7 +88,7 @@ var project = {
       "title": "vMuse",
       "dates": "December 2016 - Present",
       "description": "Explore art from around the world in VR by creating your own collection of art from the J. Paul Getty Museum and Rijksmuseum in the Netherlands. View high-resolution images of art in 2D and then jump into your own virtual gallery where you can see all your art with different 360° backgrounds.",
-      images: ['vMuse'],
+      images: ['vMUSE'],
       link: 'https://vr-react-museum.herokuapp.com/'
     },
     {
