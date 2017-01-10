@@ -99,35 +99,23 @@ var project = {
       link: 'https://christian-acuna.github.io/fend-design-mockup-portfolio/'
     }, {
       "title": "Neighborhood Map",
-      "dates": "September 2016",
+      "dates": "October 2016",
       "description": "Develop a single-page application featuring a map of a neighborhood you would like to visit. Add additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. Research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).",
       images: ['neighborhood-map'],
       link: 'http://christian-acuna.me/museum-map/'
     }, {
-      "title": "Feed Reader Testing",
+      "title": "Website Optimization",
       "dates": "September 2016",
-      "description": "In this project, you will be learning about testing with Javascript. Testing is an important part of the development process and many organizations practice a standard known as 'test-driven development' or TDD. This is when developers write tests first, before they ever start developing their application.",
-      images: ['pic05'],
-      link: '#'
-    },  {
-      "title": "Mockup to Article",
-      "dates": "September 2016",
-      "description": "Convert a mockup of a blog article into a real website",
-      images: ['pic05'],
-      link: 'https://github.com/christian-acuna/frontend-mockup-to-article'
+      "description": "Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.",
+      images: ['website-perf'],
+      link: 'https://github.com/christian-acuna/frontend-nanodegree-mobile-portfolio'
     }, {
       "title": "Classic Arcade Game Clone",
       "dates": "September 2016",
-      "description": "Use JavaScript object-oriented programming features to implement a classic arcade game.",
-      images: ['pic05'],
-      link: '#'
-    }, {
-      "title": "Website Optimization",
-      "dates": "September 2016",
-      "description": "Optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.",
-      images: ['pic05'],
-      link: '#'
-    },
+      "description": "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.",
+      images: ['frogger-html'],
+      link: 'http://christian-acuna.me/frontend-nanodegree-arcade-game/'
+    }
   ]
 };
 
