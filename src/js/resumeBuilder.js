@@ -4,7 +4,7 @@
 
 var bio = {
   'name': 'Christian Miguel Acuña',
-  'role': 'Front-End Developer',
+  'role': 'Front End Engineer',
   'contacts': {
     'mobile': '(415) 966-5530',
     'email': 'christian.acuna@fulbrightmail.org',
@@ -90,17 +90,10 @@ var project = {
       "description": "Explore art from around the world in VR by creating your own collection of art from the J. Paul Getty Museum and Rijksmuseum in the Netherlands. View high-resolution images of art in 2D and then jump into your own virtual gallery where you can see all your art with different 360° backgrounds.",
       images: ['vMUSE'],
       link: 'https://vr-react-museum.herokuapp.com/'
-    },
-    {
-      "title": "Lens of China",
-      "dates": "March 2016",
-      "description": "iOS app using Swift and submitted it to Apple’s WWDC Student Scholarship. As a 2015-16 China Fulbright Student Fellow, my current research project combines my interests in art, technology, and Chinese culture. This iOS app is part of a larger research project that will combine the open cultural data of museums from around the world related to Chinese art into a new type of digital museum experience.",
-      images: ['lensOfChina'],
-      link: 'https://christian-acuna.github.io/fend-design-mockup-portfolio/'
     }, {
       "title": "Neighborhood Map",
       "dates": "October 2016",
-      "description": "Develop a single-page application featuring a map of a neighborhood you would like to visit. Add additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. Research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).",
+      "description": "This app searches Baidu API for 20 popular tourist attractions in a chosen city (Hong Kong, Beijing, Shanghai, and Tianjin) and populates their location on a Google map. It dynamically generates a list of tags in Chinese for these locations and uses Google Translate API to provide English translations. You can filter the locations by tags. Clicking on a location creates a popup that provides more detailed information such as the address, Baidu rating, price, hours, and picture. Also, if a google street view image is available, it will appear in the left sidebar. Once a city is selected, you can view art and photography associated with this city from the Harvard Art Museum and J. Paul Getty Museum.",
       images: ['neighborhood-map'],
       link: 'http://christian-acuna.me/museum-map/'
     }, {
@@ -115,6 +108,13 @@ var project = {
       "description": "An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.",
       images: ['frogger-html'],
       link: 'http://christian-acuna.me/frontend-nanodegree-arcade-game/'
+    },
+    {
+      "title": "Lens of China",
+      "dates": "March 2016",
+      "description": "iOS app using Swift and submitted it to Apple’s WWDC Student Scholarship.",
+      images: ['lensOfChina'],
+      link: 'https://christian-acuna.github.io/fend-design-mockup-portfolio/'
     }
   ]
 };
