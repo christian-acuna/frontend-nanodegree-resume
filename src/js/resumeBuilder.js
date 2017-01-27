@@ -3,11 +3,11 @@
  */
 
 var bio = {
-  'name': 'Christian Miguel Acuña',
-  'role': 'Front End Engineer',
+  'name': 'Christian Acuña',
+  'role': 'Software Engineer',
   'contacts': {
     'mobile': '(415) 966-5530',
-    'email': 'christian.acuna@fulbrightmail.org',
+    'email': 'christian.miguel.acuna@gmail.com',
     'github': 'https://github.com/christian-acuna/',
     'linkedin': 'https://www.linkedin.com/in/christian-acuna',
     'location': 'San Francisco, CA',
